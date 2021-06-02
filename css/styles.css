@@ -303,7 +303,7 @@ h2 {
     padding-right: 15px;
     padding-top: 60px;
     padding-bottom: 161px;
-    text-align: left;
+ 
 }
 
 
@@ -314,6 +314,7 @@ h2 {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: #FFFFFF;
+    text-align: left;
 }
 
 address {
@@ -323,6 +324,7 @@ address {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    text-align: left;
 }
 
 footer .link {
@@ -334,6 +336,7 @@ footer .link {
     color: var(--primary-text-color);
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    text-align: left;
 }
 
 footer .link:hover,
