@@ -81,11 +81,13 @@ img {
             margin-right: auto;
             padding-left: 15px;
             padding-right: 15px;
+        
         }
         
  .section {
      padding-top: 94px;
      padding-bottom: 94px;
+   
  }                
 
 /***** HEADER ******/
@@ -185,13 +187,11 @@ img {
 
  .bcg-hero{
     text-align: center;
-   
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: #2F303A;
  }
 
- .all-hero{
-    padding-top: 200px;
-    padding-bottom: 280px;
- }
  .hero{ 
     font-weight: 900;
     font-size: 44px;
@@ -207,8 +207,11 @@ img {
     background-color: var(--accent-color);
     margin-top: 30px;
     cursor: pointer;
-    display: inline-block;
-    width: 200px; 
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;   
+  
     padding: 10px 32px;
     border-radius: 4px;        
 
@@ -252,8 +255,13 @@ img {
     letter-spacing: 0.03em;
 }
 
+.section-about{
+    padding-top: o;
+    padding-bottom: 94px;
+}
 .flex-img {
         display: flex;
+        margin-top: 50px;
     }
 
     .flex-img .item:not(:last-child) {
@@ -265,6 +273,7 @@ img {
 
 .flex-team{
     display: flex;
+    margin-top: 50px;
 }
 
 
@@ -275,9 +284,7 @@ img {
 .team-container{
     padding-top: 30px;
     padding-bottom: 30px;
-    border-right: 1px solid rgba(117, 117, 117, 0.2);
-    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
-    border-left: 1px solid rgba(117, 117, 117, 0.2);
+    
 }
 .team-titel {
     font-size: 16px;
@@ -302,7 +309,8 @@ img {
 /* footer */
 .bcg-color {
     background-color: #2F303A;
-   
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .container-footer{
     width: 1200px;
@@ -310,8 +318,7 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
  
 }
 
@@ -371,7 +378,6 @@ footer .link:focus {
     cursor: pointer;
     padding: 6px 22px;
     text-align: center;
-    border-radius: 4px;
 
     background-color: #F5F4FA;
 }
@@ -387,7 +393,7 @@ footer .link:focus {
     display: flex;
     justify-content: center;
   
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .filters-item:not(:last-child) {
@@ -397,7 +403,6 @@ footer .link:focus {
 /* MAIN Portfolio */
 
 .titel-portfolio {
-    padding-left: 24px;
     margin-bottom: 4px;
 
     font-weight: 500;
@@ -409,15 +414,12 @@ footer .link:focus {
 }
 
 .text-portfolio {
- 
-    padding-left: 24px;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
     text-align: left;
-    
+   
     color: var(--secondary-text-color);
 }
 
@@ -449,6 +451,9 @@ footer .link:focus {
 .set-item .border {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 24px;
+
+   
     border-right: 1px solid rgba(117, 117, 117, 0.2);
     border-bottom: 1px solid rgba(117, 117, 117, 0.2);
     border-left: 1px solid rgba(117, 117, 117, 0.2);
