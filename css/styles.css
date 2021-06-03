@@ -1,7 +1,7 @@
 
 /* цвет основного текста #212121 */
 
-/* цвет вторичный текста rgba(117, 117, 117, 1) */
+/* цвет вторичный текста #757575 */
 /* белый #FFFFFF  */
 /* акцент #2196F3 */
 /* первичный цвет фона #E5E5E5; */
@@ -16,11 +16,21 @@ html {
     box-sizing: inherit;
 }
 
-
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
 
 
 :root {
-    --primary-text-color: rgba(33, 33, 33, 1);
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
     --accent-color: #2196F3;
     --primary-background-color: #E5E5E5;
     --grid-item: 3;
@@ -71,10 +81,12 @@ img {
             margin-right: auto;
             padding-left: 15px;
             padding-right: 15px;
-    
         }
         
-                 
+ .section {
+     padding-top: 94px;
+     padding-bottom: 94px;
+ }                
 
 /***** HEADER ******/
 .header-section {
@@ -93,8 +105,8 @@ img {
     letter-spacing: 0.03em;
     text-decoration: none;
     margin-right: 92px;
-    padding-top: 32px;
-    padding-bottom: 32px; 
+    padding-top: 24px;
+    padding-bottom: 24px; 
     color: #000000;
 
 }
@@ -125,8 +137,7 @@ img {
     color: var(--primary-text-color);
     text-decoration: none; 
     padding-top: 32px;
-    padding-bottom: 32px; 
-   
+    padding-bottom: 32px;  
   
 }
 
@@ -154,7 +165,7 @@ img {
       cursor: pointer;
 
 
-      color: #757575;
+      color: var(--secondary-text-color);
   }
   .button-mail {
       margin-right: 50px;
@@ -177,28 +188,38 @@ img {
    
  }
 
+ .all-hero{
+    padding-top: 200px;
+    padding-bottom: 280px;
+ }
  .hero{ 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em; 
-   
+    width: 682px;
+    
+    margin: auto; 
  }
+
 
  .section-button {
     background-color: var(--accent-color);
     margin-top: 30px;
     cursor: pointer;
     display: inline-block;
+    width: 200px; 
+    padding: 10px 32px;
+    border-radius: 4px;        
 
     color: #FFFFFF;
  }
 
+ 
+
  /****** НАШИ ПРЕИМУЩЕСТВА ******/
    .advantages {
        display: flex;
-       padding-top: 94px;
-       padding-bottom: 94px;
    }
 
    .advantages .item { 
@@ -220,22 +241,19 @@ img {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
 }
 /* 
 ЧЕМ МЫ ЗАНИМАЕМСЯ  */
-h2 {
+ h2 {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
-.flex-img 
-    {
+.flex-img {
         display: flex;
-        padding-top: 94px;
-        padding-bottom: 94px;
     }
 
     .flex-img .item:not(:last-child) {
@@ -247,29 +265,26 @@ h2 {
 
 .flex-team{
     display: flex;
-        padding-top: 94px;
-        padding-bottom: 94px;
 }
 
-.flex-team .item {
-
-    border-right: 1px solid rgba(117, 117, 117, 0.2);
-    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
-    border-left: 1px solid rgba(117, 117, 117, 0.2);
-}
 
 .flex-team .item:not(:last-child) {
     margin-right: 30px;
 }
 
+.team-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-right: 1px solid rgba(117, 117, 117, 0.2);
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+    border-left: 1px solid rgba(117, 117, 117, 0.2);
+}
 .team-titel {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    padding-top: 30px;
-    margin-top: 10px;
-    text-align: center;
-    
+   
+    text-align: center; 
 }
 
 .about-team {
@@ -278,22 +293,16 @@ h2 {
     line-height: 1.9;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-bottom: 30px;
-    
-    color: #757575;
+    margin-top: 10px;
+ 
+   
+    color: var(--secondary-text-color);
 }
 
 /* footer */
 .bcg-color {
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2097px;
     background-color: #2F303A;
    
-    margin-left: auto;
-    margin-right: auto;
-    
 }
 .container-footer{
     width: 1200px;
@@ -302,7 +311,7 @@ h2 {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 60px;
-    padding-bottom: 161px;
+    padding-bottom: 60px;
  
 }
 
@@ -314,7 +323,7 @@ h2 {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: #FFFFFF;
-    text-align: left;
+
 }
 
 address {
@@ -324,10 +333,11 @@ address {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 9px;
 }
 
-footer .link {
+.bcg-color .link {
     /* от браузера наследует italic, поэтому указала нормал */
     font-weight: 400;   
     font-size: 14px;
@@ -336,8 +346,13 @@ footer .link {
     color: var(--primary-text-color);
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    text-align: left;
+    display: inline-block;
+   
 }
+.mail{
+    margin-bottom: 9px;
+}
+
 
 footer .link:hover,
 footer .link:focus {
@@ -353,10 +368,12 @@ footer .link:focus {
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    margin-right: 8px;
+    cursor: pointer;
+    padding: 6px 22px;
+    text-align: center;
+    border-radius: 4px;
 
-   background-color: #F5F4FA;
-   cursor: pointer;
+    background-color: #F5F4FA;
 }
 
 
@@ -369,15 +386,17 @@ footer .link:focus {
 .filters-list {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
+  
     margin-bottom: 34px;
- 
+}
+
+.filters-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 /* MAIN Portfolio */
 
 .titel-portfolio {
-    padding-top: 20px;
     padding-left: 24px;
     margin-bottom: 4px;
 
@@ -390,7 +409,7 @@ footer .link:focus {
 }
 
 .text-portfolio {
-    padding-bottom: 20px;
+ 
     padding-left: 24px;
 
     font-weight: 400;
@@ -399,15 +418,13 @@ footer .link:focus {
     letter-spacing: 0.03em;
     text-align: left;
     
-    color: #757575;
+    color: var(--secondary-text-color);
 }
-
 
 
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px; 
  
     margin-right: -30px;
     margin-bottom: -30px;
@@ -428,7 +445,10 @@ footer .link:focus {
     margin-bottom: 0;
 }
  
+
 .set-item .border {
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-right: 1px solid rgba(117, 117, 117, 0.2);
     border-bottom: 1px solid rgba(117, 117, 117, 0.2);
     border-left: 1px solid rgba(117, 117, 117, 0.2);
