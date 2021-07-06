@@ -239,6 +239,9 @@ img {
     color: #FFFFFF;
  }
 
+.section-button:hover {
+    background-color: #188CE8;
+}
  
 
  /****** НАШИ ПРЕИМУЩЕСТВА ******/
@@ -248,7 +251,7 @@ img {
        list-style: none;
    }
 
-   .advantages .item { 
+   /* .advantages .item { 
        width: 270px;  
    }
 
@@ -263,7 +266,7 @@ img {
     
     border-radius: 4px;
     /* background-image: url(../images/svg/antenna.svg); */
-   }
+   } */
 
 
 
